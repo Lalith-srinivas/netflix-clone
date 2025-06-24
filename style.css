@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-image: url('netflixbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.default-ltr-cache-1d568uk {
+    width: 9.25rem;
+    height: 2.5rem;
+    fill: rgb(229, 9, 20);
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.box {
+    width: 100%;
+    max-width: 430px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 30px;
+}
+
+.box h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+
+.option {
+    width: 100%;
+    height: 50px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.option:focus::placeholder {
+    transform: translateY(-40%) translateX(-9%) scale(.8);
+    color: rgb(187, 181, 181);
+    padding: 0;
+}
+
+.option:focus {
+    border: 2px solid white;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    background-color: #e50914;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f6121d;
+}
+
+.or {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.signin {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.signin:hover {
+    background-color: rgba(109, 109, 110, 0.9);
+}
+
+.Forget {
+    color: white;
+    font-size: medium;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.checkbox {
+    font-size: 13px;
+    color: #b3b3b3;
+    margin-bottom: 16px;
+}
+
+.signup {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.signup:hover,
+.Forget:hover,
+.learnmore:hover {
+    text-decoration: underline;
+}
+
+.box .span {
+    color: #737373;
+    font-size: 16px;
+}
+
+.info {
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.learnmore {
+    font-size: 13px;
+    color: #0071eb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.learnmorestyle {
+    color: grey;
+    text-decoration: none;
+}
+
+.learn {
+    display: none;
+}
+
+#learn {
+    font-size: small;
+}
+
+.signin-code {
+    display: none;
+}
+
+.matter {
+    text-align: center;
+    color: #737373;
+}
+
+/* Footer */
+footer {
+    height: 300px;
+    background-color: #111;
+    color: #757575;
+    padding: 50px 20px 0px 70px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .para {
+    margin-bottom: 10px;
+}
+
+footer span {
+    cursor: pointer;
+}
+
+footer .list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px 20px;
+}
+
+footer .list li {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer select {
+    width: 120px;
+    height: 32px;
+    background-color: #111;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .default-ltr-cache-1d568uk {
+        left: 20px;
+        top: 15px;
+        width: 120px;
+    }
+
+    .box {
+        padding: 40px 30px;
+        max-width: 90%;
+    }
+
+    footer .list ul {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

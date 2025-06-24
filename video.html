@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="website icon" type="webp" href="netflix_logo_icon_170919.webp">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color:white;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+    body{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+    }
+    video{
+        margin-top: 20px;
+    }
+    .info{
+        padding: 20px 30px 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    button{
+        width: 300px;
+        height: 40px;
+        background-color: rgb(97, 94, 94);
+        border: none;
+        font-size: large;
+        cursor: pointer;
+    }
+    button a{
+        text-decoration: none;
+        color:white;
+    }
+    .gallery3 {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(6, 15rem);
+    justify-self: center;
+    position: relative;
+    overflow: scroll;
+    margin-top: 20px;
+}
+
+.gallery3::-webkit-scrollbar {
+    display: none;
+}
+   .gallery2 {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(6, 15rem);
+    justify-self: center;
+    position: relative;
+    overflow: scroll;
+    margin-top: 20px;
+}
+
+.gallery2::-webkit-scrollbar{
+    display: none;
+}
+.movie {
+    width: 180px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+.movie img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: -27px;
+}
+
+.movie1 {
+    background-image: url("movie1.webp");
+    background-size: cover;
+}
+
+.movie2 {
+    background-image: url("movie2.webp");
+    background-size: cover;
+}
+
+.movie3 {
+    background-image: url("movie3.webp");
+    background-size: cover;
+}
+
+.movie4 {
+    background-image: url("movie4.webp");
+    background-size: cover;
+}
+
+.movie5 {
+    background-image: url("movie5.webp");
+    background-size: cover;
+}
+
+.movie6 {
+    background-image: url("movie6.webp");
+    background-size: cover;
+}
+
+.movie7 {
+    background-image: url("movie7.webp");
+    background-size: cover;
+}
+
+.movie8 {
+    background-image: url("movie8.webp");
+    background-size: cover;
+}
+
+.movie9 {
+    background-image: url("movie9.webp");
+    background-size: cover;
+}
+
+.movie10 {
+    background-image: url("movie10.webp");
+    background-size: cover;
+}
+
+.anime1 {
+    background-image: url("anime1.webp");
+    background-size: cover;
+}
+
+.anime2 {
+    background-image: url("anime2.webp");
+    background-size: cover;
+}
+
+.anime3 {
+    background-image: url("anime3.webp");
+    background-size: cover;
+}
+footer {
+    height: 400px;
+    background-color: #111;
+    color: #757575;
+    padding: 50px 20px 0px 70px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .para {
+    margin-bottom: 10px;
+}
+
+footer span {
+    cursor: pointer;
+}
+
+footer .list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px 20px;
+}
+
+footer .list li {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer select {
+    width: 120px;
+    height: 32px;
+    background-color: #111;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+@media screen and (max-width: 768px){
+    video{
+        height: 300px;
+    }
+}
+</style>
+<body>
+    <video width="100%" height="400px" controls>
+        <source src="Kung Fu Panda 3 _ Official Telugu Trailer _ Fox Star India.mp4"
+        type="video/mp4">
+    </video>
+    <div class="info">
+        <h2>Kung Fu Panda 3</h2>
+        <p>2016.Family/comedy. 1h 34m</p>
+        <a href="Kung Fu Panda 3 _ Official Telugu Trailer _ Fox Star India.mp4"><button>Dowland</button></a>
+        <p>While Po and his father are visiting a secret
+            panda village, an evil spirit threatens all of china, forcing 
+            Po to form a ragtag army to fight back.
+        </p>
+         <div class="gallery3">
+            <div class="movie1 movie">
+            </div>
+            <div class="movie2 movie">
+            </div>
+            <div class="movie3 movie">
+            </div>
+            <div class="movie4 movie">
+            </div>
+            <div class="movie5 movie">
+            </div>
+            <div class="movie6 movie">
+            </div>
+            </div>
+            <div class="gallery2">
+            <div class="movie10 movie">
+            </div>
+            <div class="movie9 movie">
+            </div>
+            <div class="movie8 movie">
+            </div>
+            <div class="movie7 movie">
+            </div>
+            <div class="anime1 movie">
+            </div>
+            <div class="anime2 movie">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="para">
+            Questions? Call <span>000-800-919-1743 (Toll-Free)</span>
+        </div>
+        <div class="list">
+            <ul>
+                <li>FAQ</li>
+                <li>Help Center</li>
+                <li>Terms of Use</li>
+                <li>Privacy</li>
+                <li>Cookies Preferences</li>
+                <li>Coporate Information</li>
+            </ul>
+        </div>
+        </div>
+        <select>
+            <option>English</option>
+            <option>हिन्दी</option>
+        </select>
+    </footer>
+</body>
+</html>
