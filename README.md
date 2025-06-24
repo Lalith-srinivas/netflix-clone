@@ -16,5 +16,5 @@ A responsive front-end Netflix clone built using **HTML**, **CSS**, and **JavaSc
 - JavaScript
 
 ## 🚀 Live Preview
-[Click here to see it live](https://lalith-srinivas.github.io/netflix-clone/ )
+[Click here to see it live](https://redscreenx.netlify.app/)
 
