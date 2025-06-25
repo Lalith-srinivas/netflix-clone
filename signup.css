@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-image: url('netflixbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.default-ltr-cache-1d568uk {
+    width: 9.25rem;
+    height: 2.5rem;
+    fill: rgb(229, 9, 20);
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.signinbtn {
+    background-color: red;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.signinbtn a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.signinbtn:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.885);
+}
+
+header select {
+    width: 120px;
+    height: 32px;
+    background-color: #111;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 180px;
+    top: 24px;
+}
+
+.container {
+    color: white;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container h2 {
+    font-size: 3.45rem;
+}
+
+.container p {
+    font-size: medium;
+}
+
+.option .email {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid grey;
+    font-size: medium;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.option .start {
+    width: 180px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3px;
+    text-indent: 8px;
+}
+
+.start a{
+    color: white;
+    text-decoration: none;
+}
+.start:hover {
+    background-color: rgba(255, 0, 0, 0.918);
+}
+
+.trending-section {
+    position: relative;
+    background-color: #000;
+    padding: 60px 20px 40px;
+    text-align: left;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 0% 90%;
+    border-top-right-radius: 0% 90%;
+}
+
+.curve {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #2e2e64, #ff0066, #ff0066, #2e2e64);
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    z-index: 1;
+
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(66, 66, 180, 0.515), rgba(133, 133, 213, 0.055));
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 45% 15%;
+    border-bottom-right-radius: 45% 15%;
+    border-top-left-radius: 5% 5%;
+    border-top-right-radius: 5% 5%;
+}
+
+.container-2 {
+    color: #fff;
+    background-color: #111;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.treanding {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(10, 15rem);
+    position: relative;
+    overflow: scroll;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.movie {
+    width: 180px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+.movie img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: -27px;
+}
+
+.movie1 {
+    background-image: url("movie1.webp");
+    background-size: cover;
+}
+
+.movie2 {
+    background-image: url("movie2.webp");
+    background-size: cover;
+}
+
+.movie3 {
+    background-image: url("movie3.webp");
+    background-size: cover;
+}
+
+.movie4 {
+    background-image: url("movie4.webp");
+    background-size: cover;
+}
+
+.movie5 {
+    background-image: url("movie5.webp");
+    background-size: cover;
+}
+
+.movie6 {
+    background-image: url("movie6.webp");
+    background-size: cover;
+}
+
+.movie7 {
+    background-image: url("movie7.webp");
+    background-size: cover;
+}
+
+.movie8 {
+    background-image: url("movie8.webp");
+    background-size: cover;
+}
+
+.movie9 {
+    background-image: url("movie9.webp");
+    background-size: cover;
+}
+
+.movie10 {
+    background-image: url("movie10.webp");
+    background-size: cover;
+}
+
+.next {
+    height: 100px;
+    width: 20px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    position: absolute;
+    left: 90%;
+    top: 13%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.next:hover {
+    background-color: rgba(61, 61, 61, 0.916);
+}
+
+.reasons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.more {
+    margin-top: 30px;
+}
+
+.content {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(rgba(41, 56, 76, 0.377), rgba(198, 61, 198, 0.453));
+    border-radius: 5px;
+    padding: 10px 20px 20px;
+    position: relative;
+}
+
+.content h2 {
+    font-weight: 700;
+}
+
+.content img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.faq-container {
+    padding: 0 20px;
+}
+
+.faq-item {
+    margin-top: 16px;
+    border: 1 px solid white;
+    background-color: rgba(128, 128, 128, 0.634);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.toggle {
+    display: none;
+
+}
+
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: larger;
+    position: relative;
+}
+
+.faq-content {
+    font-size: medium;
+    padding: 12px 14px;
+    display: none;
+}
+
+.toggle:checked+.faq-header+.faq-content {
+    display: block;
+}
+
+.faq-item .icon::after {
+    content: "+";
+    font-size: 30px;
+}
+
+.toggle:checked+.faq-header .icon::after {
+    content: "-";
+}
+
+.ready {
+    align-self: center;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.last {
+    justify-self: center;
+}
+
+.last .email {
+    width: 400px;
+}
+
+.email:focus::placeholder {
+    transform: translateY(-40%) translateX(-9%) scale(.8);
+    color: rgb(187, 181, 181);
+    padding: 0;
+}
+
+.option:focus {
+    border: 2px solid white;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    color: rgb(129, 127, 127);
+    padding: 50px;
+}
+
+footer .para {
+    margin-bottom: 10px;
+}
+
+footer span {
+    cursor: pointer;
+}
+
+footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 10px;
+}
+
+footer li {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer select {
+    width: 120px;
+    height: 32px;
+    background-color: #111;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: rgb(206, 195, 195);
+}
+
+footer .last-para {
+    color: rgb(128, 123, 123);
+}
+
+.learnmore {
+    font-size: 13px;
+    color: #0071eb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.learnmorestyle {
+    color: grey;
+    text-decoration: none;
+}
+
+.learn {
+    display: none;
+}
+
+#learn {
+    font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+    header select {
+        width: 80px;
+        right: 100px;
+        top: 15px;
+    }
+
+    .default-ltr-cache-1d568uk {
+        width: 6rem;
+        height: 1.5rem;
+        left: 20px;
+        top: 20px;
+    }
+
+    .signinbtn {
+        font-size: small;
+        right: 20px;
+        top: 15px;
+    }
+
+    .container .email {
+        width: 250px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(10, 15rem);
+        overflow: scroll;
+    }
+
+    .gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+    .next {
+        top: 7%;
+    }
+
+    .container .start {
+        margin-top: 10px;
+
+    }
+
+    .content {
+        width: 100%;
+        height: 250px;
+    }
+
+    .container-2 .email {
+        width: 98%;
+    }
+
+    .container-2 .start {
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 10px 10px 0px 10px;
+    }
+
+    footer .para {
+        width: 100%;
+    }
+
+    footer ul {
+        grid-template-columns: 100%;
+    }
+
+    footer .last-para {
+        font-size: small;
+    }
+}

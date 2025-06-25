@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-image: url('netflixbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signinbtn {
+    background-color: red;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.signinbtn a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.signinbtn:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.885);
+}
+
+.default-ltr-cache-1d568uk {
+    width: 9.25rem;
+    height: 2.5rem;
+    fill: rgb(229, 9, 20);
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.container {
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+.radio input {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.email {
+    height: 45px;
+    padding: 20px;
+    font-size: medium;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.email:focus::placeholder {
+    transform: translateY(-40%) translateX(-10%) scale(.8);
+    color: rgb(187, 181, 181);
+    padding: 0;
+}
+
+.email:focus {
+    border: 1px solid black;
+}
+
+.mail {
+    height: 45px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+}
+
+.design button {
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(186, 191, 196);
+    cursor: pointer;
+}
+
+.design .find-acc {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+}
+
+.mail:hover {
+    background-color: rgba(255, 0, 0, 0.83);
+}
+
+.para-text {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.hide {
+    display: none;
+}
+
+.para-text:hover {
+    color: grey;
+}
+
+#para {
+    color: rgb(103, 101, 101);
+    align-self: center;
+    font-size: small;
+}
+
+.learnmore {
+    color: white;
+    font-size: small;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.learn {
+    display: none;
+}
+
+#learn {
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: small;
+    width: 450px;
+}
+
+footer {
+    height: 300px;
+    background-color: #111;
+    color: #d8d5d5;
+    padding: 50px 20px 0px 70px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .para {
+    margin-bottom: 10px;
+}
+
+footer span {
+    cursor: pointer;
+}
+
+footer .list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px 20px;
+}
+
+footer .list li {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer select {
+    width: 120px;
+    height: 32px;
+    background-color: #111;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .default-ltr-cache-1d568uk {
+        width: 6rem;
+        height: 1.5rem;
+        left: 20px;
+        top: 20px;
+    }
+
+    .signin {
+        width: 60px;
+        height: 28px;
+        font-size: small;
+        right: 20px;
+        top: 20px;
+    }
+
+    .container {
+        width: 90%;
+        height: 100%;
+        margin-top: 20px;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .email,
+    .mail {
+        width: 100%;
+    }
+
+    footer {
+        padding: 30px 10px;
+        height: auto;
+        gap: 10px;
+    }
+
+    footer .list ul {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    footer select {
+        margin-top: 10px;
+    }
+}
